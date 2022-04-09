@@ -1,0 +1,75 @@
+
+.animate{
+    background:  url("../asset/images/head1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 250px;
+    height: 250px;
+    margin:10px auto;
+    animation-name: spin;
+    animation-iteration-count: 2;
+    animation-duration: 1s;
+}
+@keyframes spin {
+    0% {
+        background:  url("../asset/images/head1.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 250px;
+        height: 250px;
+        margin:10px auto
+    }
+    
+    25% {
+        background:  url("../asset/images/tail.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 250px;
+        height: 250px;
+        margin:10px auto;
+    }
+    
+    50% {
+        background:  url("../asset/images/head1.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 250px;
+        height: 250px;
+        margin:10px auto
+    }
+    
+    75% {
+        background:  url("../asset/images/tail.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 250px;
+        height: 250px;
+        margin:10px auto
+    }
+    
+    100% {
+        background:  url("../asset/images/head1.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 250px;
+        height: 250px;
+        margin:10px auto
+    }
+}
+
+.image{
+    background-image: url("../asset/images/head1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 250px;
+    height: 250px;
+    margin:10px auto;
+}
+.head{
+    background-image: url("../asset/images/head1.jpeg");
+   
+}
+.tail{
+    background-image: url("../asset/images/tail.jpeg");
+   
+}
