@@ -3,7 +3,7 @@ import {Link,useLocation} from 'react-router-dom';
 import classes from './Navbar.module.css';
 function Navbar() {
   const location = useLocation();
-  const pathName = location.pathname
+  const pathName = location.pathname;
   return (
     <nav  className="navbar navbar-expand-lg navbar-light bg-info ">
          <Link  className="navbar-brand text-warning" to="/">Coin Toss Game</Link>
@@ -17,6 +17,9 @@ function Navbar() {
                 </li>
                 <li  className={`nav-item ${pathName==="/about" && classes.current }`}>
                     <Link  className="nav-link text-white" to="/about"><i class="fa-solid fa-gamepad mr-2"></i>About</Link>
+                </li>
+                <li className={`nav-item ${pathName==="/result" && classes.current}`}>
+                    <Link className='nav-link text-white' to='/'><i class="fa-solid fa-chess-board mr-2"></i>Result</Link>
                 </li>
             </ul>
         </div>
