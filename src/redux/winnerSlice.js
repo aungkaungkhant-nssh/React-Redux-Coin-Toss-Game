@@ -2,7 +2,9 @@ import { createSlice } from "@reduxjs/toolkit";
 
 ///1 user win  && 0 computer win
 const initialState={
-    winners:[]
+    winners:
+        localStorage.getItem("winners") ? JSON.parse(localStorage.getItem("winners")) : []
+    
 }
 const winnerSlice = createSlice({
     name:"winner",
@@ -10,6 +12,7 @@ const winnerSlice = createSlice({
     reducers:{
         setWinner:(state,action)=>{
             state.winners = state.winners.concat(action.payload);
+            localStorage.setItem("winners",JSON.stringify(state.winners));
         }
     }
 });
